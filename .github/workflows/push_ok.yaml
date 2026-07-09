@@ -1,0 +1,17 @@
+name: Push OK
+
+on: 
+    push:
+        branches: ["main"]
+    workflow_dispatch: 
+
+jobs:
+    say-ok:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout
+            usues: actions/checkout@v4
+            
+          - name: Decir OK en consola
+            runs: |
+               echo "OK"
