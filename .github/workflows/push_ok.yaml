@@ -9,9 +9,9 @@ jobs:
     say-ok:
         runs-on: ubuntu-latest
         steps:
-          - name: Checkout
-            usues: actions/checkout@v4
+         - name: Checkout
+           uses: actions/checkout@v4
             
-          - name: Decir OK en consola
-            runs: |
-               echo "OK"
+         - name: Decir OK en consola
+           run: |
+            echo "OK"
